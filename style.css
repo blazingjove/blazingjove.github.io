@@ -70,11 +70,13 @@ nav a::before {
     background-color: #235;
 
     position: absolute;
-    top: 0;
+    top: 35px;
     width: 0;
 
     transition: all ease-in-out 225ms;
 }
+
+
 
 nav a:hover::before {
     width: 100%;
@@ -82,19 +84,24 @@ nav a:hover::before {
 
 footer {
     position:absolute;
-    background: #55d4;
+    background: #55d6aa;
     bottom: 0;
     height: 10%;
     width: 100%;
     padding-bottom: 10px;
 }
 
-footer p{
-    margin-left: 10px;
-    text-decoration-color: aliceblue;
-    
+main {
+    color:white;
+    padding-top: 20px;
 }
 
-.content{
-    text-size-adjust: 45px;
+main .intro{
+    text-align:center
+}
+
+#contact {
+    list-style: none;
+    padding-left: 1%; 
+    text-decoration: none;
 }
