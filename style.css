@@ -10,6 +10,18 @@ body {
 
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+  }
+.footer {
+    flex-shrink: 0;
+}
+
 .container{
     width: 80%;
     margin: 0 auto;
@@ -78,4 +90,20 @@ nav a::before {
 
 nav a:hover::before {
     width: 100%;
+}
+
+.footer {
+    flex-shrink: 0;
+    background-color: #235;
+    color:burlywood;
+}
+
+footer p{
+    margin-left: 10px;
+    text-decoration-color: aliceblue;
+    
+}
+
+.content{
+    text-size-adjust: 45px;
 }
