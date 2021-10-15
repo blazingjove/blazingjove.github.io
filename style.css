@@ -1,0 +1,81 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-image: url("assets/Astro.jpg");
+  font-family: sans-serif;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+ 
+header {
+    background: #55d6aa
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    width: 30px;
+    height: auto;
+    padding: 10px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul{
+    margin:0%;
+    padding: 0%;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 16px;
+
+    /* code for header line selector */
+    position: relative;
+
+}
+
+nav a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #235;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #235;
+
+    position: absolute;
+    top: 0;
+    width: 0;
+
+    transition: all ease-in-out 225ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
