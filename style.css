@@ -1,22 +1,20 @@
-html,
-body {
-  margin: 0;
-  height: 100%;
-  background-image: url("assets/Astro.jpg");
-  font-family: sans-serif;
-  font-weight: bold;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+body{
+    font-family: sans-serif;  
+    background-image: url("assets/Astro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    font-weight: bold;
 }
 
-.container{
-    width: 80%;
+.navigation{
+    width: 85%;
     margin: 0 auto;
 }
- 
 header {
-    background: #55d6aa
+    background: #005C52;
+    position: fixed;
+    width: 99%;
 }
 
 header::after{
@@ -25,17 +23,9 @@ header::after{
     clear: both;
 }
 
-.logo {
-    float: left;
-    width: 30px;
-    height: auto;
-    padding: 10px;
-}
-
 nav {
     float: right;
 }
-
 nav ul{
     margin:0%;
     padding: 0%;
@@ -53,13 +43,13 @@ nav li{
 }
 
 nav a{
-    color: #444;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 nav a:hover {
-    color: #235;
+    color: #00c4b0;
 }
 
 nav a::before {
@@ -67,7 +57,7 @@ nav a::before {
     display: block;
     height: 5px;
     width: 100%;
-    background-color: #235;
+    background-color: #00c4b0;
 
     position: absolute;
     top: 35px;
@@ -76,32 +66,164 @@ nav a::before {
     transition: all ease-in-out 225ms;
 }
 
-
-
 nav a:hover::before {
     width: 100%;
 }
 
-footer {
-    position:absolute;
-    background: #55d6aa;
-    bottom: 0;
-    height: 10%;
-    width: 100%;
-    padding-bottom: 10px;
+.logo {
+    float: left;
+    width: 30px;
+    height: auto;
+    padding: 10px;
 }
 
-main {
+footer{
+    background-color: #235;
     color:white;
-    padding-top: 20px;
 }
 
-main .intro{
-    text-align:center
+.contact {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 500px;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#contact {
-    list-style: none;
-    padding-left: 1%; 
-    text-decoration: none;
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color:white;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 900;
+    color:turquoise;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #005C52;
+    
+}
+.contactForm h2{
+    font-size:  30px;
+    color: white;
+    font-weight: 600;
+}
+
+.contactForm .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputbox input,
+.contactForm .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputbox span{
+    position:absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.05s;
+    color: #666;
+}
+
+.contactForm .inputbox input:focus ~ span,
+.contactForm .inputbox input:valid ~ span,
+.contactForm .inputbox textarea:focus ~ span,
+.contactForm .inputbox textarea:valid ~ span{
+    color: whitesmoke;
+    font-size: 12px;
+    transform: translatey(-20px);
+}
+
+.contactForm .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.contactForm .inputbox input[type="submit"]:hover{
+    width: 100px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
 }
