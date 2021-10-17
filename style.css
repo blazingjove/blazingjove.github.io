@@ -95,14 +95,14 @@ footer{
     flex-direction: column;
 }
 
-.contact .content{
-    max-width: 800px;
+footer .footerTitle{
     text-align: center;
 }
 
-.contact .content h2{
+footer .footerTitle h2{
+    padding-top: 25px;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: bold;
     color:white;
 }
 
@@ -210,6 +210,89 @@ footer{
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+}
+
+.contact_info{
+    margin: 2% 2%;
+}
+
+.content{
+    text-size-adjust: 45px;
+}
+
+footer p a{
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+footer p a:hover{
+  color: #00c4b0;
+  cursor: pointer;
+}
+
+footer p a:visited {
+  color: #AD00C4;
+  text-decoration: none;
+}
+footer p a:visited:hover {
+  color: #00c4b0;
+}
+
+footer p a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #00c4b0;
+
+    position: absolute;
+    top: 30px;
+    width: 0;
+
+    transition: all ease-in-out 225ms;
+}
+
+footer p a:hover::before {
+    width: 100%;
+}
+
+.emoji {
+  font-size: 1.2rem;
+  transition: 
+    transform .2s ease-in-out;
+}
+
+.emoji--mail:before {
+  content: '📪';
+}
+
+.emoji--mail:hover:before {
+  content: '📬';
+}
+
+.emoji--doc:before {
+  content: '📄';
+}
+
+.emoji--doc:hover:before {
+  content: '📑';
+}
+
+.emoji--git:before {
+  content: '💻';
+}
+
+.emoji--git:hover:before {
+  content: '👩🏽‍💻';
+}
+
+.emoji--linkedin:before {
+  content: '🌐';
+}
+
+.emoji--linkedin:hover:before {
+  content: '🌎';
 }
 
 @media (max-width: 991px){
