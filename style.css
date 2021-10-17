@@ -1,6 +1,6 @@
 body{
     font-family: sans-serif;  
-    background-image: url("assets/Astro.jpg");
+    background-image: linear-gradient(180deg, #21424C, #510A32);
     background-repeat: no-repeat;
     background-size: cover;
     color:white;
@@ -78,8 +78,6 @@ nav a:hover::before {
 }
 
 footer{
-    background-color: #235;
-    color:white;
 }
 
 .contact {
@@ -95,24 +93,12 @@ footer{
     flex-direction: column;
 }
 
-footer .footerTitle{
-    text-align: center;
-}
-
-footer .footerTitle h2{
-    padding-top: 25px;
-    font-size: 36px;
-    font-weight: bold;
-    color:white;
-}
-
-
 .container{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 0;
 }
 
 .container .contactInfo {
@@ -139,12 +125,15 @@ footer .footerTitle h2{
 .container .contactInfo .box .text h3{
     font-weight: 900;
     color:turquoise;
+    
 }
 
 .contactForm {
     width: 40%;
-    padding: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
     background: #005C52;
+    
     
 }
 .contactForm h2{
@@ -247,7 +236,7 @@ footer p a::before {
     background-color: #00c4b0;
 
     position: absolute;
-    top: 30px;
+    top: 22px;
     width: 0;
 
     transition: all ease-in-out 225ms;
@@ -264,7 +253,7 @@ footer p a:hover::before {
 }
 
 .emoji--mail:before {
-  content: '📪';
+  content: '📭';
 }
 
 .emoji--mail:hover:before {
@@ -280,19 +269,19 @@ footer p a:hover::before {
 }
 
 .emoji--git:before {
-  content: '💻';
+  content: ':)';
 }
 
 .emoji--git:hover:before {
-  content: '👩🏽‍💻';
+  content: ':(';
 }
 
 .emoji--linkedin:before {
-  content: '🌐';
+  content: ':)';
 }
 
 .emoji--linkedin:hover:before {
-  content: '🌎';
+  content: ':(';
 }
 
 @media (max-width: 991px){
