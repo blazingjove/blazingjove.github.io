@@ -269,7 +269,7 @@ footer p a:hover::before {
 }
 
 .emoji--git:before {
-  content: ':)';
+  content: ':))))';
 }
 
 .emoji--git:hover:before {
