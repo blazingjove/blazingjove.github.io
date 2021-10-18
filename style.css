@@ -287,10 +287,10 @@ footer p a:hover::before {
     }
     .container .contactInfo,
     .contactForm{
-        width: 60%;
+        width: 50%;
     }
     header{
-        width:70%
+        width:60%
     }
 }
 
