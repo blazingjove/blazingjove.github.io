@@ -218,7 +218,7 @@ footer p a{
   color: white;
   text-decoration: none;
   position: relative;
-  font-size: 1.2rem;
+  font-size: 18px;
 }
 
 footer p a:hover{
@@ -290,9 +290,7 @@ footer p a:hover::before {
         width: 70%;
     }
 
-    footer{
-        font-size: 25px;
-    }
+    
 }
 
 main{
