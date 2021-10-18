@@ -289,7 +289,7 @@ footer p a:hover::before {
     .contactForm{
         width: 60%;
     }
-    body+header{
+    header{
         width:70%
     }
 }
