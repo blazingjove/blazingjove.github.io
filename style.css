@@ -133,13 +133,14 @@ footer{
     padding-left: 30px;
     padding-right: 30px;
     background: #005C52;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
     
     
 }
 .contactForm h2{
     font-size:  30px;
     color: white;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .contactForm .inputbox{
@@ -158,6 +159,8 @@ footer{
     border-bottom: 2px solid #333;
     outline: none;
     resize: none;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
 .contactForm .inputbox span{
@@ -178,6 +181,7 @@ footer{
     color: whitesmoke;
     font-size: 12px;
     transform: translatey(-20px);
+    font-weight: bold;
 }
 
 .contactForm .inputbox input[type="submit"]{
@@ -213,6 +217,7 @@ footer p a{
   color: white;
   text-decoration: none;
   position: relative;
+  font-size: 18px;
 }
 
 footer p a:hover{
@@ -266,22 +271,6 @@ footer p a:hover::before {
 
 .emoji--doc:hover:before {
   content: '📑';
-}
-
-.emoji--git:before {
-  content: ':))))';
-}
-
-.emoji--git:hover:before {
-  content: ':(';
-}
-
-.emoji--linkedin:before {
-  content: ':)';
-}
-
-.emoji--linkedin:hover:before {
-  content: ':(';
 }
 
 @media (max-width: 991px){
