@@ -14,6 +14,7 @@ body{
 header {
     background: #005C52;
     position: fixed;
+    top: 0;
     width: 99%;
 }
 
@@ -132,8 +133,8 @@ footer{
     width: 40%;
     padding-left: 30px;
     padding-right: 30px;
-    background: #005C52;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19);
+    background: hsla(173.5,100%,18%,100%);
+    box-shadow: 12px 12px 2px 1px white
     
     
 }
@@ -156,7 +157,7 @@ footer{
     font-size: 16px;
     margin: 10px 0;
     border: none;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #510A32;
     outline: none;
     resize: none;
     font-weight: bold;
@@ -273,6 +274,7 @@ footer p a:hover::before {
   content: '📑';
 }
 
+
 @media (max-width: 991px){
     .contact{
         padding: 50px;
@@ -285,6 +287,13 @@ footer p a:hover::before {
     }
     .container .contactInfo,
     .contactForm{
-        width: 100%;
+        width: 60%;
     }
+    body+header{
+        width:70%
+    }
+}
+
+main{
+    padding-top: 60px;
 }
