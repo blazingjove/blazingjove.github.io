@@ -218,7 +218,7 @@ footer p a{
   color: white;
   text-decoration: none;
   position: relative;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 footer p a:hover{
@@ -275,7 +275,7 @@ footer p a:hover::before {
 }
 
 
-@media (max-width: 900px){
+@media (max-width: 991px){
     .contact{
         padding: 50px;
     }
@@ -287,10 +287,11 @@ footer p a:hover::before {
     }
     .container .contactInfo,
     .contactForm{
-        width: 50%;
+        width: 70%;
     }
-    header{
-        width:60%
+
+    footer{
+        font-size: 25px;
     }
 }
 
