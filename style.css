@@ -187,23 +187,22 @@ footer{
 
 .contactForm .inputbox input[type="submit"]{
     width: 100px;
-    background: #00bcd4;
     color: #fff;
     border: none;
+    background-color: indianred;
+    position: relative;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
 }
 
 .contactForm .inputbox input[type="submit"]:hover{
-    width: 100px;
-    background: white;
     color: black;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
+    background-color: grey
+}
+
+.contactForm .inputbox input[type="submit"]:active{
+    color: white;
 }
 
 .contact_info{
