@@ -78,9 +78,24 @@ nav a:hover::before {
     padding: 10px;
 }
 
-footer{
+main{
+    padding-top: 60px;
+
 }
 
+.nothing{
+    min-height: 700px;
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .contact {
     margin: 0;
     padding: 0;
@@ -288,10 +303,4 @@ footer p a:hover::before {
     .contactForm{
         width: 60%;
     }
-
-    
-}
-
-main{
-    padding-top: 60px;
 }
