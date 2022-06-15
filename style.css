@@ -1,21 +1,16 @@
 body{
     font-family: sans-serif;  
-    background-image: linear-gradient(180deg, #21424C, #510A32);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:white;
+    background-color: #EEE5E9;
     font-weight: bold;
+    margin: 0px;
 }
 
-.navigation{
-    width: 85%;
-    margin: 0 auto;
-}
 header {
-    background: #005C52;
+    background: #08415C;
     position: fixed;
     top: 0;
-    width: 99%;
+    width: 100%;
+    position: sticky;
 }
 
 header::after{
@@ -28,17 +23,17 @@ nav {
     float: right;
 }
 nav ul{
-    margin:0%;
+    margin-right:3rem;
     padding: 0%;
     list-style: none;
 }
 
 nav li{
     display: inline-block;
-    margin-left: 70px;
-    padding-top: 16px;
+    margin-left: 5rem;
+    padding-top: 1.5rem;
 
-    /* code for header line selector */
+    /* code for header underline selector positioning*/
     position: relative;
 
 }
@@ -50,45 +45,29 @@ nav a{
 }
 
 nav a:hover {
-    color: #00c4b0;
+    color: #EDCBB1;
 }
 
 nav a::before {
     content: '';
     display: block;
-    height: 5px;
+    height: .3rem;
     width: 100%;
-    background-color: #00c4b0;
+    background-color: #eee5e9;
 
     position: absolute;
-    top: 35px;
+    top: 2.7rem;
     width: 0;
 
-    transition: all ease-in-out 225ms;
+    transition: all ease-in-out 150ms;
 }
 
 nav a:hover::before {
     width: 100%;
 }
 
-.logo {
-    float: left;
-    width: 30px;
-    height: auto;
-    padding: 10px;
-}
-
-main{
-    padding-top: 60px;
-
-}
-
-.nothing{
-    min-height: 700px;
-    max-width: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+footer{
+  background: #08415C;
 }
 
 main p{
@@ -148,7 +127,7 @@ main p{
     width: 40%;
     padding-left: 30px;
     padding-right: 30px;
-    background: hsla(173.5,100%,18%,100%);
+    background: #6b818c;
     box-shadow: 12px 12px 2px 1px white
     
     
@@ -195,20 +174,20 @@ main p{
 .contactForm .inputbox textarea:focus ~ span,
 .contactForm .inputbox textarea:valid ~ span{
     color: whitesmoke;
-    font-size: 12px;
-    transform: translatey(-20px);
+    font-size: 2em;
+    transform: translatey(-4em);
     font-weight: bold;
 }
 
 .contactForm .inputbox input[type="submit"]{
-    width: 100px;
+    width: 10em;
     color: #fff;
     border: none;
     background-color: indianred;
     position: relative;
     cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
+    padding: 2em;
+    font-size: 3em;
 }
 
 .contactForm .inputbox input[type="submit"]:hover{
@@ -221,7 +200,7 @@ main p{
 }
 
 .contact_info{
-    margin: 2% 2%;
+    margin: .1em .1em;
 }
 
 .content{
@@ -236,7 +215,7 @@ footer p a{
 }
 
 footer p a:hover{
-  color: #00c4b0;
+  color: #EDCBB1;
   cursor: pointer;
 }
 
@@ -245,7 +224,7 @@ footer p a:visited {
   text-decoration: none;
 }
 footer p a:visited:hover {
-  color: #00c4b0;
+  color: #e312ff;
 }
 
 footer p a::before {
@@ -253,13 +232,13 @@ footer p a::before {
     display: block;
     height: 5px;
     width: 100%;
-    background-color: #00c4b0;
+    background-color: #EEE5E9;
 
     position: absolute;
     top: 22px;
     width: 0;
 
-    transition: all ease-in-out 225ms;
+    transition: all ease-in-out 150ms;
 }
 
 footer p a:hover::before {
