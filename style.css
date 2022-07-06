@@ -1,20 +1,25 @@
 :root {
-    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;  
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --navy: #0a192f;
+    --dark-navy: #020c1b;
+    --light-navy: #08415C;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;  
 }
 
 * {
     font-family: var(--font-sans);
-    --navy: #0a192f;
     color: white;
 }
 
 body{
     margin: 0px;
-    background-color: var(--navy);
+    background-color: var(--dark-navy);
 }
 
 header {
-    background: #08415C;
+    background: var(--navy);
     position: fixed;
     top: 0;
     width: 100%;
@@ -59,7 +64,7 @@ nav a::before {
     display: block;
     height: .3rem;
     width: 100%;
-    background-color: #eee5e9;
+    background-color: white;
     position: absolute;
     top: 2.7rem;
     width: 0;
@@ -84,25 +89,79 @@ main {
     flex-direction: column;
     align-items: flex-start;
     min-height: 100vh;
-    padding: 0px;
-    text-align: center;
 }
 
 .EEdff h1 {
-    font-size: 3.5rem;
+    font-size: 6rem;
 }
 
+h1{
+    color: var(--lightest-slate);
+    margin-block-start: 2em ;
+    margin-block-end: 0.0em;
+}
+
+h2 {
+    margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+    font-size: 5rem;
+    color: var(--light-slate);
+}
+
+h3 {
+    margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+    font-weight: 1rem;
+    margin: 20px 0px 0px;
+    max-width:  600px;
+    color: var(--slate)    
+}
+
+
+
+
+.about h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.about .content{
+    display: inline-flex;
+    margin: auto;
+    width: 52%;
+}
+
+.content p{ 
+    font-size: 2rem;
+    color: var(--slate);
+    margin-left: 35%;
+}
+
+.about {
+    min-height: 400px;
+}
+
+
+
+
+
 footer{
-  background: #08415C;
+    padding-top: 0px;
+    background: var(--navy);
+}
+.contact .about{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 2rem;
 }
 
 .contact {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     position: relative;
-    min-height: 500px;
-    padding: 50px 100px;
+    min-height: 400px;
+    padding: 0px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,7 +235,6 @@ footer{
     outline: none;
     resize: none;
     font-weight: bold;
-    font-family: sans-serif;
 }
 
 .contactForm .inputbox span{
@@ -194,7 +252,7 @@ footer{
 .contactForm .inputbox input:valid ~ span,
 .contactForm .inputbox textarea:focus ~ span,
 .contactForm .inputbox textarea:valid ~ span{
-    color: whitesmoke;
+    color: black;
     font-size: 2em;
     transform: translatey(-4em);
     font-weight: bold;
@@ -202,7 +260,7 @@ footer{
 
 .contactForm .inputbox input[type="submit"]{
     width: 10em;
-    color: #fff;
+    color: black;
     border: none;
     background-color: indianred;
     position: relative;
@@ -213,11 +271,11 @@ footer{
 
 .contactForm .inputbox input[type="submit"]:hover{
     color: black;
-    background-color: grey
+    background-color: grey;
 }
 
 .contactForm .inputbox input[type="submit"]:active{
-    color: white;
+    color: black;
 }
 
 .contact_info{
@@ -252,7 +310,7 @@ footer p a::before {
     display: block;
     height: 5px;
     width: 100%;
-    background-color: #EEE5E9;
+    background-color: white;
 
     position: absolute;
     top: 22px;
