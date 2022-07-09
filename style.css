@@ -76,10 +76,6 @@ nav a:hover::before {
     width: 100%;
 }
 
-main {
-    margin-left: 3rem;
-}
-
 .EEdff {
     font-weight: bold;
     display: flex;
@@ -89,6 +85,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     min-height: 100vh;
+    background-color: #510A32;
 }
 
 .EEdff h1 {
@@ -99,6 +96,7 @@ h1{
     color: var(--lightest-slate);
     margin-block-start: 2em ;
     margin-block-end: 0.0em;
+    margin-left: 3rem;
 }
 
 h2 {
@@ -106,19 +104,15 @@ h2 {
     margin-block-end: 0.0em;
     font-size: 5rem;
     color: var(--light-slate);
+    margin-left: 3rem;
 }
 
 h3 {
-    margin-block-start: 0.0em;
-    margin-block-end: 0.0em;
     font-weight: 1rem;
-    margin: 20px 0px 0px;
     max-width:  600px;
-    color: var(--slate)    
+    color: var(--slate);
+    margin-left: 3rem;
 }
-
-
-
 
 .about h1 {
     font-size: 3rem;
@@ -139,6 +133,7 @@ h3 {
 
 .about {
     min-height: 400px;
+    margin-left: 3rem;
 }
 
 
