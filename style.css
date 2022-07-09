@@ -1,5 +1,5 @@
 :root {
-    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-sans: "San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     --navy: #0a192f;
     --dark-navy: #020c1b;
     --light-navy: #08415C;
@@ -291,6 +291,7 @@ footer p a{
   text-decoration: none;
   position: relative;
   font-size: 18px;
+  font-weight: bold;
 }
 
 footer p a:hover{
@@ -311,11 +312,9 @@ footer p a::before {
     height: 5px;
     width: 100%;
     background-color: white;
-
     position: absolute;
     top: 22px;
     width: 0;
-
     transition: all ease-in-out 150ms;
 }
 
@@ -325,8 +324,7 @@ footer p a:hover::before {
 
 .emoji {
   font-size: 1.2rem;
-  transition: 
-    transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
 }
 
 .emoji--mail:before {
