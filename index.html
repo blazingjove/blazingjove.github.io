@@ -96,15 +96,15 @@
                     </div>
 
                     <div class="contactForm">
+                        <h3>Message me</h3>
                         <form action="https://formsubmit.co/blazingjove@gmail.com" method="POST">
                             <input type="hidden" name="_subject" value="WOOOOOO!!!!">
-                            <p>Name</p>
                             <input type="text" name="name" required placeholder="Name">
-                            <p>Email</p>
                             <input type="email" name="email" required placeholder="Email Address">
-                            <p>Yout message</p>
-                            <input type="text" name="message" required placeholder="Type text here">
-                            <button type="submit">Send</button>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" class="form-control" name="message" rows="8" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-dark btn-block">submit</button>
                        </form>
                     </div>
                     
