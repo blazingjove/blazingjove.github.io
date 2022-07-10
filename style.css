@@ -56,6 +56,7 @@ nav a{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: larger;
 }
 
 
@@ -202,13 +203,14 @@ h3 {
 }
 
 
-
+/*FOOTER*/
 footer{
     background: var(--navy);
 }
 
 footer h1{
     margin-top: 0px;
+    font-size: 60px;
 }
 
 .contact .about{
@@ -236,7 +238,6 @@ footer h1{
     justify-content: center;
     align-items: center;
     margin-top: 0;
-    min-height: 400px;
 }
 
 .container .contactInfo {
@@ -265,95 +266,33 @@ footer h1{
     color:turquoise;
     
 }
+/*CONTACT FORM*/
 
 .contactForm {
-    width: 40%;
     padding-left: 30px;
     padding-right: 30px;
     background: #6b818c;
-    box-shadow: 12px 12px 2px 1px white
-    
-    
+    box-shadow: 10px 10px .1px .1px var(--lightest-slate);
+    height: 275px;
+    border-radius: 10px;
+    min-width: 550px;
 }
-.contactForm h2{
-    font-size:  30px;
+
+.contactForm p{
+    margin: auto;
     color: white;
-    font-weight: 700;
-}
-
-.contactForm .inputbox{
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.contactForm .inputbox input,
-.contactForm .inputbox textarea{
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #510A32;
-    outline: none;
-    resize: none;
     font-weight: bold;
 }
 
-.contactForm .inputbox span{
-    position:absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.05s;
-    color: #666;
-}
 
-.contactForm .inputbox input:focus ~ span,
-.contactForm .inputbox input:valid ~ span,
-.contactForm .inputbox textarea:focus ~ span,
-.contactForm .inputbox textarea:valid ~ span{
-    color: black;
-    font-size: 2em;
-    transform: translatey(-4em);
-    font-weight: bold;
-}
-
-.contactForm .inputbox input[type="submit"]{
-    width: 10em;
-    color: black;
-    border: none;
-    background-color: indianred;
-    position: relative;
-    cursor: pointer;
-    padding: 2em;
-    font-size: 3em;
-}
-
-.contactForm .inputbox input[type="submit"]:hover{
-    color: black;
-    background-color: grey;
-}
-
-.contactForm .inputbox input[type="submit"]:active{
-    color: black;
-}
-
-.contact_info{
-    margin: .1em .1em;
-}
-
-.content{
-    text-size-adjust: 45px;
+footer p{
+    font-size: 25px;
 }
 
 footer p a{
   color: white;
   text-decoration: none;
   position: relative;
-  font-size: 18px;
   font-weight: bold;
 }
 
@@ -376,7 +315,7 @@ footer p a::before {
     width: 100%;
     background-color: white;
     position: absolute;
-    top: 22px;
+    top: 28px;
     width: 0;
     transition: all ease-in-out 150ms;
 }
@@ -386,7 +325,6 @@ footer p a:hover::before {
 }
 
 .emoji {
-  font-size: 1.2rem;
   transition: transform .2s ease-in-out;
 }
 
